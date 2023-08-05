@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="station">
+        <div class="nav">
+            <i class="fa fa-arrow-left" onclick="window.location.href='index.html'"></i>
+            <h3>Station information</h3>
+            <i class="fa-solid fa-location-dot fa-beat"></i>
+        </div>
+        <div class="box">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Station">
+            </div>
+        </div>
+        <div class="allstat">
+            <!-- <div class="stat">
+                <div class="blue">
+                    <h3>Agra Cantt</h3>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="blue red">
+                    <h3>Agra College</h3>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="blue red">
+                    <h3>Agra Fort</h3>
+                    
+                 -->
+            <ul id="myUL">
+                <li><a href="" class="blue">Agra Cantt</a></li>
+                <li><a href="" class="red">Agra College</a></li>
+                <li><a href="" class="red">Agra Fort</a></li>
+                <li><a href="" class="blue">Agra Mandi</a></li>
+                <li><a href="" class="red">Basai</a></li>
+                <li><a href="" class="blue">Collectorate</a></li>
+                <li><a href="" class="red">Fatehabad Road</a></li>
+                <li><a href="" class="blue">Foundary Nagar</a></li>
+                <li><a href="" class="red">Guru ka Taal</a></li>
+                <li><a href="" class="blue">Hariparwat</a></li>
+                <li><a href="" class="red">Jama Masjid</a></li>
+                <li><a href="" class="blue">Kalindi Vihar</a></li>
+                <li><a href="" class="blue">Kamla Nagar</a></li>
+                <li><a href="" class="blue">M.G.Road</a></li>
+                <li><a href="" class="red">Medical College</a></li>
+                <li><a href="" class="red">Raja Ki Mandi</a></li>
+                <li><a href="" class="blue red">Ram Bagh</a></li>
+                <li><a href="" class="red">RBS College</a></li>
+                <li><a href="" class="blue">Sadar Bazar</a></li>
+                <li><a href="" class="blue">Sanjay place</a></li>
+                <li><a href="" class="red">Sikandara</a></li>
+                <li><a href="" class="blue">Subhash Park</a></li>
+                <li><a href="" class="blue">Sultan Ganj Crossing</a></li>
+                <li><a href="" class="red">Taj East Gate</a></li>
+                <li><a href="" class="red">Taj Mahal</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+    </script>
+</body>
+
+</html>

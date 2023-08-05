@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agra Metro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <i class="fa-solid fa-bars" style="font-size: 20px;margin: 0 20px 0 0px;" onclick="myfunction()"></i>
+            <div class="right">
+                <img src="/image/log.jpg" alt="">
+                <h1>Agra Metro</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://th.bing.com/th/id/OIP.EeJrwix3SQvCdrpiqloclQHaFO?pid=ImgDet&rs=1"
+                            target="_blank">Metro Map</a></li>
+                    <li><a href="#">Nearest Station</a></li>
+                    <li><a href="station_info.html">Station Information</a></li>
+                    <li><a href="tourGuide.html">Tour Guide</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="mobile" class="fghj">
+            <div class="top">
+                <i class="fa-solid fa-xmark" onclick="myFunction1()"></i>
+                <img src="image/log.jpg" alt="">
+                <h4>Agra Metro</h4>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <p>Home</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-map" aria-hidden="true"> </i>
+                    <p>Metro Map</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-map-marker" aria-hidden="true"> </i>
+                    <p>Nearest Station</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-crosshairs" aria-hidden="true"> </i>
+                    <p>Station Information</p>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-bandcamp" aria-hidden="true"> </i>
+                    <p>Tour Guide</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-train" aria-hidden="true"> </i>
+                    <p>Know Your Metro</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p> Recharge</p>
+                </div>
+                <div class="box">
+                    <i class="fa fa-inr" aria-hidden="true"></i>
+                    <p>Fare</p>
+
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-star-half-stroke" aria-hidden="true"> </i>
+                    <p>Rate Us</p>
+
+                </div>
+                <div class="box">
+                    <i class="fa fa-lock" aria-hidden="true"> </i>
+                    <p>Privacy Policy</p>
+
+                </div>
+                <div class="box">
+                    <i class="fa fa-info-circle" aria-hidden="true"> </i>
+                    <p>About Us</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="route">
+                <div class="sost">
+                    <select name="form" id="form" class="station">
+                        <option value=""> Source Station</option>
+                        <option value="">Agra Cantt</option>
+                        <option value="">Agra College</option>
+                        <option value="">Agra Fort</option>
+                        <option value="">Agra Mandi</option>
+                        <option value="">Basai</option>
+                        <option value="">Collectorate</option>
+                        <option value="">Farehabad Road</option>
+                        <option value="">Foundary Nagar</option>
+                        <option value="">Guru Ka Taal</option>
+                        <option value="">Hariparwat</option>
+                        <option value="">ISBT</option>
+                        <option value="">Mankamesuar</option>
+                        <option value="">Kalindi Vihar</option>
+                        <option value="">Kamla Nagar</option>
+                        <option value="">M.G Road</option>
+                        <option value="">Medical College</option>
+                        <option value="">RBS College</option>
+                        <option value="">Raja ki Mandi</option>
+                        <option value="">Ram Bagh</option>
+                        <option value="">Sadar Bazar Sanjay Place</option>
+                        <option value="">Sikandre</option>
+                        <option value="">Subhash Park</option>
+                        <option value="">Sultan Ganj Crossing</option>
+                        <option value="">Taj East Gate</option>
+                        <option value="">Taj Mahal</option>
+                    </select>
+                    <select name="to" id="to" class="station">
+                        <option value="">Destination Station</option>
+                        <option value="">Agra Cantt</option>
+                        <option value="">Agra College</option>
+                        <option value="">Agra Fort</option>
+                        <option value="">Agra Mandi</option>
+                        <option value="">Basai</option>
+                        <option value="">Collectorate</option>
+                        <option value="">Farehabad Road</option>
+                        <option value="">Foundary Nagar</option>
+                        <option value="">Guru Ka Taal</option>
+                        <option value="">Hariparwat</option>
+                        <option value="">ISBT</option>
+                        <option value="">Mankamesuar</option>
+                        <option value="">Kalindi Vihar</option>
+                        <option value="">Kamla Nagar</option>
+                        <option value="">M.G Road</option>
+                        <option value="">Medical College</option>
+                        <option value="">RBS College</option>
+                        <option value="">Raja ki Mandi</option>
+                        <option value="">Ram Bagh</option>
+                        <option value="">Sadar Bazar Sanjay Place</option>
+                        <option value="">Sikandre</option>
+                        <option value="">Subhash Park</option>
+                        <option value="">Sultan Ganj Crossing</option>
+                        <option value="">Taj East Gate</option>
+                        <option value="">Taj Mahal</option>
+                    </select>
+                    <button>SHOW ROUTE</button>
+                </div>
+                <div class="exchange">
+                    <img src="image/Screenshot_20230730-155330.jpg" alt="">
+                </div>
+            </div>
+            <div class="feature">
+                <div class="col">
+                    <div class="feainf"
+                        onclick="window.location.href='https://th.bing.com/th/id/OIP.EeJrwix3SQvCdrpiqloclQHaFO?pid=ImgDet&rs=1'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_1.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Metro Map</p>
+                        </div>
+                    </div>
+                    <div class="feainf">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_2.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Near By Metro</p>
+                        </div>
+                    </div>
+                    <div class="feainf" onclick="window.location.href='station_info.html'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_3.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Station Information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feainf" onclick="window.location.href='tourGuide.html'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_4.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Tour Guide</p>
+                        </div>
+                    </div>
+                    <div class="feainf" onclick="window.location.href='knyoMetro.html'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_6.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Know Your Metro</p>
+                        </div>
+                    </div>
+                    <div class="feainf">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_7.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Recharge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feainf"
+                        onclick="window.location.href='https://play.google.com/store/apps/details?id=com.engineersons.agrametro&hl=en_US'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_8.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Rate Us</p>
+                        </div>
+                    </div>
+                    <div class="feainf" onclick="window.location.href=''">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_9.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Fare</p>
+                        </div>
+                    </div>
+                    <div class="feainf" onclick="window.location.href='about.html'">
+                        <div class="img">
+                            <img src="image/Screenshot_20230730-140848_10.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>About Us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfunction() {
+    var a = document.getElementById("mobile");
+    if (a.style.display === "none"){
+        a.style.display = "block";
+    }
+    else{
+        a.style.display = "none";
+    }
+}
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

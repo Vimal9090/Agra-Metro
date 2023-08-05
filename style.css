@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --background-color:rgb(23, 76, 191);
+    --stationbackground-color: rgb(186, 222, 240);
+}
+
+/* index.html */
+
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: relative;
+    background-color: var(--background-color);
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+.nav .fa-bars{
+    display: none;
+}
+.nav .right{
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.nav .right img{
+    height: 60px;
+    margin-right: 20px; 
+}
+.nav .menu ul{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    list-style: none;
+}
+.nav .menu ul li{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#mobile{
+    width: 80%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+#mobile .top{
+    width: 100%;
+    background-color: var(--background-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#mobile .top img{
+    width: 80px;
+}
+#mobile .bottom i{
+    color: var(--background-color);
+    margin-right: 15px;    
+}
+#mobile .bottom{
+    background-color: #fff;
+    font-weight: 100;
+}
+#mobile .bottom .box{
+    display: flex;
+    padding: 9px 10px;
+    
+}
+
+
+.route{
+    width: 50%;
+    background-color: var(--stationbackground-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.route .station{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.route .sost{
+    margin-left: 20px;
+}
+.route select{
+    padding: 5px;
+    background-color: azure;
+    border-radius: 10px;
+}
+.route button{
+    color: #fff;
+    margin-left: 50px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: rgb(34, 93, 219);
+}
+.route img{
+    width: 100px;
+}
+.hero{
+    display: flex;
+}
+.feature{
+    width: 50%;
+    padding: 0 30px;
+    background-color: #fff;
+}
+.feature .col{
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.feature .col .feainf{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.feature .col .feainf .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature .col .feainf .img{
+    display: flex;
+    justify-content: center;
+}
+.feature .col .feainf .img img{
+    width: 50%;
+}
+
+
+/* tourGuide.html */
+#tour{
+    overflow: hidden;
+}
+#tour .nav h3{
+    margin-left: 50px;
+}
+
+
+.tour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.tour .box{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-shadow: 1px 8px gainsboro;
+}
+.tour .box .info{
+    padding: 20px;
+}
+.tour .box img{
+    width: 50%;
+}
+.tour .box h4{
+    margin: 5px 0;
+}
+
+/* station_info.html */
+
+#station .nav{
+    justify-content: space-between;
+}
+#station .box{
+    width: 100%;
+    height: 70px;
+    background-color: var(--stationbackground-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#station .search{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 2px 2px gray;
+    background-color: #fff;
+}
+#station .box input{
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+}
+#station .allstat{
+    background-color: gainsboro;
+}
+#station .blue{
+    border-left: 10px solid blue;
+}
+#station .red{
+    border-left: 10px solid red;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+}
+  
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+
+/* about.html */
+
+.about{
+    background-color: var(--background-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .abtus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 136px;
+}
+.about img{
+    width: 30%;
+}
+.about .icon{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.about .p{
+    color: gainsboro;
+}
+
+/* knyoMetro.html */
+.nav{
+    width: 100%;
+}
+.metro .nav h3{
+    margin-left: 40px;
+}
+.metro details{
+   width: 100%;
+   font-size: 35px;
+   min-height: 80px;
+   max-height: 300px;
+   box-shadow: 2px 3px gainsboro;
+   margin: 10px;
+   margin-right: 5px;
+   overflow: scroll;
+}
+.metro summary {
+    width: 100%;
+    border-left: 15px solid red;
+    background-color: gainsboro;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* position: fixed; */
+}
+.metro option{
+    z-index: 1;
+    padding: 0 50px;
+    font-size: 20px;
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .menu{
+        display: none;
+    }
+    .nav{
+        height: 50px;
+    }
+    .nav h1{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .nav .right img{
+        display: none;
+    }
+    .route .station{
+        height: 40px;
+    }
+    .nav .fa-bars{
+        display: block;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .route{
+        width: 100%;
+        padding: 25px 0;
+        margin: 0;
+    }
+    .feature{
+        width: 100%;
+    }
+    .feature .col{
+        margin-top: 30px;
+    }
+    .feature .col .feainf img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mobile{
+        display: block; 
+        position: absolute;
+        top: 0;
+    }
+    .fa-xmark{
+        color: #fff;
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        display: block;
+    }
+    
+
+    /* tour.html */
+
+    .tour .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .tour .box img{
+        width: 100%;
+    }
+
+}
